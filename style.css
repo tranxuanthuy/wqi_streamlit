@@ -1,0 +1,136 @@
+/* Header */
+.header {
+    background-color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* căn giữa nội dung */
+    border-bottom: 1px solid #ddd;
+}
+
+.header img {
+    height: 65px;
+    margin-right: 15px;
+}
+
+
+/* Main banner */
+.main-banner {
+    background: linear-gradient(to right, #2b6490, #3a7fb8); /* gradient nhẹ */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* đổ bóng nhẹ */
+    margin: 20px auto;
+}
+
+/* .main-banner h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+} */
+.main-banner p.main-banner__welcome {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    line-height: 1.2;
+}
+
+.main-banner p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.main-banner a {
+    background-color: #ffffff;
+    color: #2b6490;
+    padding: 14px 32px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-banner a:hover {
+    background-color: #2C689C;
+    color: white;
+}
+
+/* Main content */
+/* tab */
+/* Căn giữa thanh tab trong Streamlit */
+.stTabs [role="tablist"] {
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.stTabs [role="tablist"] button {
+    font-size: 18px !important;        /* tăng từ mặc định ~14px */
+    font-weight: 600 !important;       /* hoặc 700 nếu bạn muốn thật đậm */
+    padding: 8px 16px;
+}
+
+.stTabs [role="tab"][aria-selected="true"] {
+    color: #2b6490; /* màu xanh đồng bộ với banner chẳng hạn */
+    border-bottom: 3px solid #2b6490;
+}
+
+div.stButton > button:first-child {
+    background-color: #2b6490;
+    color: white;
+    height: 2.5em;
+    padding: 0 1em;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+div.stButton > button:first-child:hover {
+    background-color: #245378;
+    color: white;
+}
+
+
+
+
+/* Cho nội dung chính */
+.block-container {
+    padding-bottom: 60px; /* hoặc hơn nếu footer cao hơn */
+}
+
+
+/* footer */
+.footer {
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2b6490;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+    z-index: 100;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+    color: #00cfff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
